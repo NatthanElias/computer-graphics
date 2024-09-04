@@ -134,7 +134,7 @@ bool ler(PGM *pgm, string caminho)
 
     // ler largura e altura
     dado = lerLinhaArquivo(arq);
-    str = stringstream(dado); // lib para ler string por partes (no caso 2)
+    str = stringstream(dado);
     if (!(str >> pgm->larg))
     {
         cout << "PGM: erro ao ler a largura\n";
