@@ -92,6 +92,9 @@ bool gravar(PGM *pgm, string caminho)
     }
 
     arq.close();
+
+    cout << "O arquivo " << caminho << " foi gravado!\n\n";
+
     return true;
 }
 
