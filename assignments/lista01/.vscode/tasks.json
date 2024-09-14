@@ -5,7 +5,7 @@
         {
             "type": "shell",
             "label": "g++.exe build active file",
-            "command": "g++.exe",
+            "command": "C:/msys64/mingw64/bin/g++",
             "presentation": {"clear": true, "reveal": "always", "panel": "new"},
             "args": [
                 "-g",
