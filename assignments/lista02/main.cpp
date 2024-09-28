@@ -36,7 +36,7 @@ int main(void)
 	RGB corRGBarea(0,255,255); 
 	cout << "\n\n#Exercício 6#\n";
 	criarComCor(&exerc6, 150, 200, corRGB);
-	marcarArea(&exerc6, 75, 50, 100, 110, corRGBarea);
+	marcarArea(&exerc6, 67, 30, 100, 300, corRGBarea);
 	gravar(&exerc6, "exerc6_rgb.ppm");
 	cout << "Imagem foi gravada!\n";
 	destruir(&exerc6);
@@ -100,9 +100,10 @@ void marcarArea(PPM *ppm, int x1, int y1, int x2, int y2, RGB cor) {
 
 	y1 = min(y1,y2);
 	y1 = max(y1,0);
+	cout << "Y1:" << y1 << endl;
 
 	y2 = max(y1,y2);
-	y2 = min(y2, ppm->alt-1);
+	y2 = min(y2, ppm->alt+1);
 
 	//pintar coluna
 	for (int j = y1; j <= y2 ; j++) {
