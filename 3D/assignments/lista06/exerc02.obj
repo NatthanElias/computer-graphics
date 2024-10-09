@@ -1,0 +1,36 @@
+# arqv do material
+mtllib textura3.mtl
+
+#frente
+v -1 2 -2
+v 1 2 -2
+v 1 0 -2
+v -1 0 -2
+f 3 2 1
+f 1 4 3
+
+#dir
+v 1 2 -4
+v 1 0 -4
+f 2 3 5
+f 3 6 5
+
+# textura A
+vt 0.0 0.0
+vt 0.5 0.0
+vt 0.5 1.0
+vt 0.0 1.0
+
+# aplica na face (vertice/textura) A 
+usemtl matTextura3
+f 1/4 2/3 3/2 4/1
+
+# textura B
+vt 0.5 0.0
+vt 1.0 0.0
+vt 1.0 1.0
+vt 0.5 1.0
+
+# aplica na face (vertice/textura) A 
+usemtl matTextura3
+f 2/8 5/7 6/6 3/5
